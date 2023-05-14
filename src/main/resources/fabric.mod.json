@@ -18,6 +18,9 @@
 		"main": [
           "net.endermans.coins.EndermansCoins"
 		],
+		"client": [
+			"net.endermans.coins.EndermansCoinsClient"
+		],
 		"fabric-datagen": [
 			"net.endermans.coins.EndermansCoinsDataGenerator"
 		]
