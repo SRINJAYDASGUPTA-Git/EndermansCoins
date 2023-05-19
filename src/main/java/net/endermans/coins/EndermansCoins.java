@@ -1,6 +1,9 @@
 package net.endermans.coins;
 
+import net.endermans.coins.block.ModBlocks;
+import net.endermans.coins.item.ModItemGroup;
 import net.endermans.coins.item.ModItems;
+import net.endermans.coins.villagers.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +15,9 @@ public class EndermansCoins implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
+        ModVillagers.registerVillagers();
+        ModBlocks.registerModBlocks();
     }
 }

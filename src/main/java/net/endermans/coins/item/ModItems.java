@@ -26,15 +26,19 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup(){
-        addToItemGrourp(ItemGroups.INGREDIENTS, PENNY);
-        addToItemGrourp(ItemGroups.INGREDIENTS, QUARTER);
-        addToItemGrourp(ItemGroups.INGREDIENTS, HALF);
-        addToItemGrourp(ItemGroups.INGREDIENTS, MOHOR);
+        addToItemGroup(ItemGroups.INGREDIENTS, PENNY);
+        addToItemGroup(ItemGroups.INGREDIENTS, QUARTER);
+        addToItemGroup(ItemGroups.INGREDIENTS, HALF);
+        addToItemGroup(ItemGroups.INGREDIENTS, MOHOR);
+ addToItemGroup(ModItemGroup.COINS, PENNY);
+        addToItemGroup(ModItemGroup.COINS, QUARTER);
+        addToItemGroup(ModItemGroup.COINS, HALF);
+        addToItemGroup(ModItemGroup.COINS, MOHOR);
 
 
     }
 
-    private static void addToItemGrourp(ItemGroup group, Item item){
+    private static void addToItemGroup(ItemGroup group, Item item){
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
 

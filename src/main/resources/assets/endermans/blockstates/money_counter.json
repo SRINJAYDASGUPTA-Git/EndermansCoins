@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "endermans:block/money_counter"
+    },
+    "facing=south": {
+      "model": "endermans:block/money_counter",
+      "y" : "180"
+    },
+    "facing=west": {
+      "model": "endermans:block/money_counter",
+      "y" : "270"
+    },
+    "facing=east": {
+      "model": "endermans:block/money_counter",
+      "y" : "90"
+    }
+  }
+}
