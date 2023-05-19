@@ -17,7 +17,9 @@ public class EndermansCoins implements ModInitializer {
     public void onInitialize() {
         ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
-        ModVillagers.registerVillagers();
         ModBlocks.registerModBlocks();
+        ModVillagers.registerVillagers();
+        ModVillagers.registerTrades();
+
     }
 }
