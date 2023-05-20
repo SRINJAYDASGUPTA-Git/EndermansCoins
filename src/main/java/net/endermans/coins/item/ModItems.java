@@ -20,22 +20,20 @@ public class ModItems {
     public static final Item MOHOR = registerItem("mohor",
             new Item(new FabricItemSettings().fireproof()));
 
+    public static final Item CHEQUE = registerItem("cheque",
+            new Item(new FabricItemSettings().fireproof()));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(EndermansCoins.MOD_ID, name), item);
 
     }
 
     public static void addItemsToItemGroup(){
-        addToItemGroup(ItemGroups.INGREDIENTS, PENNY);
-        addToItemGroup(ItemGroups.INGREDIENTS, QUARTER);
-        addToItemGroup(ItemGroups.INGREDIENTS, HALF);
-        addToItemGroup(ItemGroups.INGREDIENTS, MOHOR);
- addToItemGroup(ModItemGroup.COINS, PENNY);
+        addToItemGroup(ModItemGroup.COINS, PENNY);
         addToItemGroup(ModItemGroup.COINS, QUARTER);
         addToItemGroup(ModItemGroup.COINS, HALF);
         addToItemGroup(ModItemGroup.COINS, MOHOR);
-
-
+        addToItemGroup(ModItemGroup.COINS, CHEQUE);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item){

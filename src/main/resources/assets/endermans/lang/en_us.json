@@ -2,5 +2,10 @@
   "item.endermans.penny": "Penny",
   "item.endermans.quarter": "Quarter",
   "item.endermans.half": "Half",
-  "item.endermans.mohor": "Mint"
+  "item.endermans.mohor": "Mint",
+  "item.endermans.cheque": "Cheque",
+
+  "block.endermans.money_counter": "Money Counter",
+
+  "entity.minecraft.villager.banker": "Banker"
 }
